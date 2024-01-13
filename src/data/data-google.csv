@@ -1,0 +1,88 @@
+#
+Platform,Users
+"[""Web""]",313
+
+#
+Operating system,Users
+iOS,184
+Android,95
+Windows,25
+Macintosh,9
+
+#
+Platform / device category,Users
+web / mobile,279
+web / desktop,34
+web / tablet,1
+
+#
+Browser,Users
+Chrome,96
+Safari (in-app),95
+Safari,91
+Android Webview,17
+Edge,10
+Samsung Internet,4
+
+#
+Device category,Users
+mobile,279
+desktop,34
+tablet,1
+
+#
+Screen resolution,Users
+428x926,48
+390x844,47
+414x896,34
+430x932,22
+1920x1080,21
+360x800,14
+385x854,13
+375x667,12
+375x812,11
+412x915,9
+384x824,7
+393x852,7
+1440x900,6
+384x857,6
+432x960,5
+360x780,4
+320x693,3
+320x712,3
+384x854,3
+412x892,3
+1280x720,2
+360x880,2
+384x832,2
+412x918,2
+414x736,2
+432x984,2
+1024x1024,1
+1366x768,1
+1536x864,1
+320x658,1
+320x676,1
+320x872,1
+339x735,1
+339x753,1
+345x883,1
+360x720,1
+360x747,1
+360x760,1
+384x790,1
+385x824,1
+412x1006,1
+412x846,1
+412x869,1
+412x883,1
+412x938,1
+412x960,1
+424x942,1
+491x1091,1
+674x842,1
+691x829,1
+
+#
+App,Crash-free users
+5645484815,1

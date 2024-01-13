@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encuesta - Eric Price</title>
+</head>
+
+<body class="bg-[#001e3e]">
+    <div class=" mt-6 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="Contacto">
+        <img src="img/EricpriceLogo-white.svg" alt="" class="m-auto w-[400px]">
+        <!-- <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-90">
+            Survey
+        </h2> -->
+        <p class="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
+            <!-- En Abogado Eric Price podemos ayudarte a cumplir tus sueños de inmigración. Pide tu consulta gratuita
+            comunicándote con nosotros hoy. -->
+        </p>
+        <section class="bg-gray-50 p-6 rounded-sm">
+            <div class="px-4 mx-auto  max-w-screen-md">
+                <!-- <form action="" onsubmit="" class="space-y-8"> -->
+
+                <!-- <form method="POST" action="form.php" id="formSalesforce"> -->
+                <div id="formSalesforce">
+
+                    <div class="flex flex-col gap-6">
+                        <input hidden type="text" value="spanish" id="language">
+                        <div>
+                            <label for="" class="block mb-2 text-base font-medium text-gray-900">
+                                ¿Nos has escuchado en la radio?
+                            </label>
+                            <div class="radioGroup">
+                                <input type="radio" id="radio_input_yes" name="radio_input" value=1 />
+                                <label for="Agree">Si</label>
+                            </div>
+                            <div class="radioGroup">
+                                <input type="radio" id="radio_input_no" name="radio_input" value=0 />
+                                <label for="Idisagree">No</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="last_name"
+                                class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-300">
+                                ¿Donde escuchaste sobre nuestro sitio web?
+                            </label>
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <input id="check_radio" name="check_radio" aria-describedby="radio option"
+                                        type="checkbox" value=1>
+                                    <label for="check_radio">
+                                        Radio
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="check_internet" name="check_internet" aria-describedby="flowbite"
+                                        type="checkbox" value=1>
+                                    <label for="check_internet">
+                                        Internet
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="check_referral" name="check_referral" aria-describedby="flowbite"
+                                        type="checkbox" value=1>
+                                    <label for="check_referral">
+                                        Referencia de Amigo/familiar
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="check_facebook" name="check_facebook" aria-describedby="flowbite"
+                                        type="checkbox" value=1>
+                                    <label for="check_facebook">
+                                        Facebook
+                                    </label>
+                                </div>
+                                <div>
+                                    <!-- <input id="flowbite" aria-describedby="flowbite" type="checkbox"> -->
+                                    <label for="check_other">
+                                        Otra (especifica por favor)
+                                    </label>
+                                    <textarea id="check_other" rows="2" name="check_other"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                                        placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="" class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-300">
+                                ¿Que calificación le das a nuestro servicio?
+                            </label>
+                            <input hidden id="statusRating" name="statusRating"></input>
+                            <fieldset class="rating flex">
+                                <!-- <legend>Please rate:</legend> -->
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                                    title="5 stars" onclick="getStars('star5')">
+                                    5 stars
+                                </label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                    title="4 stars" onclick="getStars('star4')">
+                                    4 stars
+                                </label>
+                                <input type="radio" id="star    3" name="rating" value="3" /><label for="star3"
+                                    title="3 stars" onclick="getStars('star3')">
+                                    3 stars</label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                    title="2 stars" onclick="getStars('star2')">
+                                    2 stars</label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                    title="1 star" onclick="getStars('star1')">
+                                    1 star
+                                </label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="text-center">
+                                <button name="sendButton" onclick="sendData()" id="ButtonSend"
+                                    class="w-11/12 py-2.5 px-5 mt-8 mr-2 mb-2 text-xl font-medium text-white focus:outline-none bg-orange-400 rounded-lg border border-gray-200 hover:bg-orange-500 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                                    Enviar
+                                </button>
+                                <p id="messageError"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/rating.js"></script>
+</body>
+
+</html>

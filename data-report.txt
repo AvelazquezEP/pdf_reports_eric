@@ -1,0 +1,30 @@
+--EP-LA-Radio.Viva
+TOTAL LEADS: 5094 --> 11.78% of the total database records
+DATA LEADSOURCE (July to recent data):
+1.- EP-LA-Radio.Viva:	701.5 <-- callrail
+2.- EP-LA-Radio.Viva:	525 <-- FROM DATABASE SALESFORCE
+3.- Appointment set: 341  (ONLY 69 20-scheduled) // (65-Cancelled Consult, 20-Scheduled, 60-Missed Consult)
+4.- DNR: 21 (4 - EP-LA-Radio.Viva)
+5.- No show (60-Missed Consult): 68
+6.- 0
+7.- 65-Cancelled Consult:	1
+8.- FU SET: 36
+	- 45-Follow UP Scheduled (Additional Contract, Employment based, Initial Consult)
+	- 45-Follow UP Missed Cancelled
+
+##Division between Before/After July
+
+--EP-LA-Radio.Viva
+TOTAL LEADS: 0
+DATA LEADSOURCE (BEFORE JULY - January to June)
+
+1.- CALLRAIL: 545
+2.- EP-LA-Radio.Viva:	817 <-- FROM DATABASE SALESFORCE
+3.- Appointment set: 528 (ONLY 47 20-scheduled) // (65-Cancelled Consult, 20-Scheduled, 60-Missed Consult)
+4.- DNR: 4 (0 from Radio.Viva)
+5.- No show (60-Missed Consult): 25
+6.- LTFU Nurturing: 0 (none from this filter)
+7.- 65-Cancelled Consult:	0
+8.- Follow UP(FU) SET: 11 (none from Radio.Viva)
+	- 45-Follow UP Scheduled (Additional Contract, Employment based, Initial Consult)
+	- 45-Follow UP Missed Cancelled
