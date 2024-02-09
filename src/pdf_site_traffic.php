@@ -8,8 +8,8 @@ $total_last_week = 0;
 /* #region Array per data range */
 // 18-23 // 1-6 
 // 24-30 // 7-13
-$week = [9, 10, 11, 12, 13, 14, 15];
-$month = [01, 01];
+$week = [06, 07, 8, 9, 10, 11, 12];
+$month = [02, 02];
 
 /* #region Weekly data */
 
@@ -295,15 +295,51 @@ $p_referral = [-33.33, -50, 50, 100, 0, 0, 0];
 // $p_organic_social = [-100, -100, -50, 25, 100, 100, -50];
 // $p_referral = [0, 0, 0, 0, -100, -100, 100];
 /* #endregion */
+
+/* #region 09 January - 15 January */
+// $p_total_daily = [-60.59, -58.801, -43.01, 63.96, 85.98, -33.33, 37.93];
+// $p_paid_search = [-81.19, -90.91, -79.08, 81.53, 178.16, -57.69, 58.03];
+// $p_direct = [-20.55, 3.17, 42, 15.79, -11.86, -7.69, -10.94];
+// $p_organic_search = [-53.57, -35, -48.28, 50, -28.57, -42.86, 10.71];
+// $p_organic_social = [100, -100, -100, -40, -33.33, -100, 33.33];
+// $p_referral = [-100, -100, 0, 0, -100, 0, 0];
 /* #endregion */
 
 /* #region 09 January - 15 January */
-$p_total_daily = [-60.59, -58.81, -43.01];
-$p_paid_search = [-81.19, -90.91, -79.08];
-$p_direct = [-20.55, 3.17, 42];
-$p_organic_search = [-53.57, -35, -48.28];
-$p_organic_social = [100, -100, -100];
-$p_referral = [-100, -100, 0];
+// $p_total_daily = [-63.96, -52.1, 35.34, 42.03, -36.07, -62.1, -47];
+// $p_paid_search = [-83.57, -88.02, 66.67, 92.11, -37.6, -88.42, -81.31];
+// $p_direct = [-37.65, 55.56, -4.44, -5.56, -48.08, 22.22, 82.46];
+// $p_organic_search = [-60, -46.43, 100, -27.27, 50, -45.45, -77.42];
+// $p_organic_social = [-100, 100, 25, -100, -50, 0, -100];
+// $p_referral = [-100, 0, -100, 0, 0, 0, -66.67];
+/* #endregion */
+
+/* #region 23 January - 29 January */
+// $p_total_daily = [-50.45, -53.14, -51.7, -19.42, 49.23, -48.76, -8.33];
+// $p_paid_search = [-79.74, -82.21, -90.32, -23.32, 62.91, -52.27, -10.92];
+// $p_direct = [3.28, -5.8, 160.53, 14.29, -7.41, -23.53, -13.04];
+// $p_organic_search = [-55.88, -22.22, -33.33, -45.83, 0, -57.14, 57.14];
+// $p_organic_social = [-50, -71.43, -80, 100, 100, 0, 100];
+// $p_referral = [0, -50, -33.33, 0, 200, -100, -50];
+/* #endregion */
+
+/* #region 23 January - 29 January */
+// $p_total_daily = [-13.43, 3.58, -54.9, -8.63, -20.27, -6.45, -46.75];
+// $p_paid_search = [-14.93, -3.16, -86.89, -10.27, -30.49, -76.19, -91.28];
+// $p_direct = [-6.56, 32.65, 18.18, -28.57, 76, 123.08, 186.67];
+// $p_organic_search = [-13.79, 33.33, -62.07, 100, 0, 183.33, -39.39];
+// $p_organic_social = [20, -50, -100, 100, -100, 100, 0];
+// $p_referral = [-100, -100, -80, -66.67, -33.33, 0, -100];
+/* #endregion */
+/* #endregion */
+
+/* #region 06 January - 12 January */
+$p_total_daily = [44.92, -40.63, -53.52];
+$p_paid_search = [50.18, -84.49, -91.07];
+$p_direct = [21.05, 66.15, 69.64];
+$p_organic_search = [48, -58.33, -66.67];
+$p_organic_social = [-33.33, -100, -100];
+$p_referral = [0, 0, -100];
 /* #endregion */
 
 /* #region FUNCTIONS */
@@ -412,7 +448,6 @@ $cell_red = "#ff8f8f";
 $cell_green = "#beecb9";
 $actual_date = "08/16/2023 - 08/22/2023";
 $last_date = "08/09/2023 - 08/14/2023";
-
 ?>
 
 <!DOCTYPE html>
@@ -422,7 +457,6 @@ $last_date = "08/09/2023 - 08/14/2023";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
     <title>User acquisition - Report</title>
 </head>
 
@@ -504,7 +538,7 @@ $last_date = "08/09/2023 - 08/14/2023";
                     <thead>
                         <tr class="active">
                             <?php foreach ($week as $day) : ?>
-                                <th><?= $month[0] ?><?= $day ?>/2023</th>
+                                <th><?= $month[0] ?>/<?= $day ?>/2023</th>
                                 <!-- <th><?= $day ?></th> -->
                             <?php endforeach; ?>
                         </tr>
@@ -532,7 +566,7 @@ $last_date = "08/09/2023 - 08/14/2023";
                     <thead>
                         <tr class="active">
                             <?php foreach ($week as $day) : ?>
-                                <th><?= $month[0] ?><?= $day ?>/2023</th>
+                                <th><?= $month[0] ?>/<?= $day ?>/2023</th>
                                 <!-- <th><?= $day ?></th> -->
                             <?php endforeach; ?>
                         </tr>
